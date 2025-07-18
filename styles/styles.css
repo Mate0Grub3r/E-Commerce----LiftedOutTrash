@@ -1,0 +1,184 @@
+/* Styles reset */
+* {
+  font-family: "inter";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter_18pt-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter_18pt-Bold.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter_18pt-Italic.ttf);
+  font-weight: italic;
+  font-style: italic;
+}
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter_18pt-Light.ttf);
+  font-weight: light;
+  font-style: light;
+}
+/* Variables */
+/* Styles */
+body {
+  background-color: #101010;
+  /* Navbar */
+}
+body nav {
+  background-color: #101010;
+}
+body nav .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  /* Navbar menu */
+  /* Offcanvas menu */
+  /* Cart button */
+  /* Searchbar */
+}
+body nav .container-fluid .navbar-brand {
+  color: #d5d5d5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translateX(12vh);
+}
+@media screen and (max-width: 1200px) {
+  body nav .container-fluid .navbar-brand {
+    transform: translateX(0) !important;
+  }
+}
+body nav .container-fluid .navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding-right: 0;
+  left: 0 !important;
+  box-shadow: none;
+}
+body nav .container-fluid .navbar-toggler .navbar-toggler-icon {
+  font-size: 1.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23d5d5d5' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+body nav .container-fluid .offcanvas-header {
+  background-color: #101010;
+}
+body nav .container-fluid .offcanvas-header .offcanvas-title {
+  color: #d5d5d5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  body nav .container-fluid .offcanvas-header .offcanvas-title {
+    margin-left: 15vw !important;
+  }
+}
+body nav .container-fluid .offcanvas-body {
+  background-color: #101010;
+}
+body nav .container-fluid .offcanvas-body .searchbar {
+  justify-content: center;
+  margin-top: 18vh !important;
+}
+body nav .container-fluid .offcanvas-body .searchbar input {
+  border-radius: 0;
+  background-color: #101010;
+  border: none;
+  border-bottom: #d5d5d5 1px solid;
+  color: #d5d5d5 !important;
+  box-shadow: none;
+  width: 200px;
+}
+body nav .container-fluid .offcanvas-body .dropdowns-box {
+  display: flex;
+  justify-content: space-around;
+}
+body nav .container-fluid .offcanvas-body .dropdowns-box button {
+  background-color: transparent;
+  border: none;
+  color: #d5d5d5;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+body nav .container-fluid .offcanvas-body .dropdowns-box button:hover {
+  color: #d5d5d5;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body nav .container-fluid .offcanvas-body .dropdown-menu {
+  background-color: #101010;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+}
+body nav .container-fluid .offcanvas-body .dropdown-menu .dropdown-item {
+  color: #d5d5d5;
+}
+body nav .container-fluid .offcanvas-body .dropdown-menu .dropdown-item:hover {
+  background-color: #d5d5d5;
+  color: #101010;
+}
+body nav .container-fluid .cart-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #d5d5d5;
+  text-decoration: none;
+  margin: 0 15px;
+}
+body nav .container-fluid .cart-button .cart-icon {
+  width: 22px;
+  height: 22px;
+}
+body nav .container-fluid .cart-button .cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #757575;
+  color: #d5d5d5;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+body nav .container-fluid .searchbar-pc {
+  margin-top: 0 !important;
+}
+body nav .container-fluid .searchbar-pc input {
+  border-radius: 0;
+  background-color: #101010;
+  border: none;
+  border-bottom: #d5d5d5 1px solid;
+  color: #d5d5d5 !important;
+  box-shadow: none;
+  width: 200px;
+}
+@media screen and (max-width: 1000px) {
+  body nav .container-fluid .searchbar-pc {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
