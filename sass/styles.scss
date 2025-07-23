@@ -87,72 +87,76 @@ body {
       }
 
       /* Offcanvas menu */
-      .offcanvas-header {
-        background-color: $blackprimary;
-        .offcanvas-title {
-          color: $whiteprimary;
-          font-size: 1.5rem;
-          font-weight: bold;
-          text-transform: uppercase;
-          margin: 0 auto;
-        }
-        @media screen and (max-width: 1200px) {
+      .offcanvas {
+        transition: all 0.3s ease-in-out;
+
+        .offcanvas-header {
+          background-color: $blackprimary;
           .offcanvas-title {
-            margin-left: 15vw !important;
+            color: $whiteprimary;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-left: 4rem;
+          }
+          @media screen and (max-width: 1200px) {
+            .offcanvas-title {
+              margin-left: 15vw !important;
+            }
           }
         }
-      }
 
-      .offcanvas-body {
-        background-color: $blackprimary;
-        .searchbar {
-          justify-content: center;
-          margin-top: 18vh !important;
-          input {
-            border-radius: 0;
+        .offcanvas-body {
+          background-color: $blackprimary;
+          .searchbar {
+            justify-content: center;
+            margin-top: 18vh !important;
+            input {
+              border-radius: 0;
+              background-color: $blackprimary;
+              border: none;
+              border-bottom: $whiteprimary 1px solid;
+              color: $whiteprimary !important;
+              box-shadow: none;
+              width: 200px;
+            }
+          }
+          .dropdowns-box {
+            display: flex;
+            justify-content: space-around;
+
+            button {
+              background-color: transparent;
+              border: none;
+              color: $whiteprimary;
+              text-decoration: none;
+              font-size: 1rem;
+              cursor: pointer;
+              padding: 10px 15px;
+              text-transform: uppercase;
+
+              &:hover {
+                color: $whiteprimary;
+                background-color: rgba(255, 255, 255, 0.1);
+              }
+            }
+          }
+          .dropdown-menu {
             background-color: $blackprimary;
             border: none;
-            border-bottom: $whiteprimary 1px solid;
-            color: $whiteprimary !important;
             box-shadow: none;
-            width: 200px;
-          }
-        }
-        .dropdowns-box {
-          display: flex;
-          justify-content: space-around;
-
-          button {
-            background-color: transparent;
-            border: none;
-            color: $whiteprimary;
-            text-decoration: none;
-            font-size: 1rem;
-            cursor: pointer;
-            padding: 10px 15px;
-            text-transform: uppercase;
-
-            &:hover {
+            position: absolute;
+            .dropdown-item {
               color: $whiteprimary;
-              background-color: rgba(255, 255, 255, 0.1);
-            }
-          }
-        }
-        .dropdown-menu {
-          background-color: $blackprimary;
-          border: none;
-          box-shadow: none;
-          position: absolute;
-          .dropdown-item {
-            color: $whiteprimary;
-            &:hover {
-              background-color: $whiteprimary;
-              color: $blackprimary;
+              &:hover {
+                background-color: $whiteprimary;
+                color: $blackprimary;
+              }
             }
           }
         }
       }
-
       /* Cart button */
       .cart-button {
         position: relative;
@@ -197,6 +201,222 @@ body {
       @media screen and (max-width: 1000px) {
         .searchbar-pc {
           display: none !important;
+        }
+      }
+    }
+  }
+
+  /* Banner */
+  header {
+    .banner-box {
+      padding: 0;
+      img {
+        width: 100%;
+        height: 85vh;
+        border: 1px solid $grayprimary;
+        margin-top: 4.5rem;
+      }
+    }
+  }
+
+  /* Main content */
+  main {
+    .welcome-box {
+      border-bottom: 1px solid $grayprimary;
+      margin-top: 1rem;
+      h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+        color: $whiteprimary;
+        text-transform: uppercase;
+      }
+    }
+
+    /* Remeras section */
+
+    .remeras-texto-box-html {
+      margin-top: 4rem;
+      border: 1px solid $grayprimary;
+      .p-remeras-texto {
+        margin-top: 0rem;
+      }
+    }
+    .box-remeras-html {
+      border-bottom: 1px solid $grayprimary;
+    }
+
+    .remeras-texto-box {
+      border-bottom: 1px solid $grayprimary;
+      text-align: start;
+
+      p {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        color: $whiteprimary;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+    .box-remeras {
+      display: flex;
+      justify-content: space-between;
+      .remera1-box {
+        border: 1px solid $grayprimary;
+        border-top: none;
+        border-bottom: none;
+
+        img {
+          width: 400px;
+          height: 400px;
+          padding: 0;
+          margin: 0;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+        h2 {
+          border-top: 1px solid $grayprimary;
+          font-size: 1.5rem;
+          color: $whiteprimary;
+          text-transform: uppercase;
+          margin-top: -2rem;
+          padding-top: 1rem;
+          text-align: center;
+        }
+        p {
+          font-size: 1.2rem;
+          color: $whiteprimary;
+          text-align: center;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    /* Baggys section */
+    .baggys-texto-box {
+      border: 1px solid $grayprimary;
+      @extend .remeras-texto-box;
+
+      p {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        color: $whiteprimary;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .box-baggys {
+      @extend .box-remeras;
+      .baggy1-box {
+        @extend .remera1-box;
+        img {
+          width: 400px;
+          height: 500px;
+          padding: 0;
+          margin: 0;
+        }
+        h2 {
+          font-size: 1.5rem;
+          color: $whiteprimary;
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+          padding-top: 1rem;
+          text-align: center;
+        }
+        p {
+          font-size: 1.2rem;
+          color: $whiteprimary;
+          text-align: center;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    /* Hoodies section */
+    .hoodies-texto-box {
+      border: 1px solid $grayprimary;
+      @extend .remeras-texto-box;
+
+      p {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        color: $whiteprimary;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .box-hoodies {
+      @extend .box-remeras;
+      .hoodies-box {
+        @extend .remera1-box;
+        img {
+          width: 400px;
+          height: 450px;
+          padding: 0;
+          margin: 0;
+        }
+        h2 {
+          font-size: 1.5rem;
+          color: $whiteprimary;
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+          padding-top: 1rem;
+          text-align: center;
+        }
+        p {
+          font-size: 1.2rem;
+          color: $whiteprimary;
+          text-align: center;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    /* Zip-Hoodies section */
+    .zip-hoodies-texto-box {
+      border: 1px solid $grayprimary;
+      @extend .remeras-texto-box;
+      justify-content: left;
+
+      p {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        color: $whiteprimary;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .box-zip-hoodies {
+      @extend .box-remeras;
+      justify-content: left !important;
+      gap: 1.5rem;
+      .zip-hoodies-box {
+        @extend .remera1-box;
+        border-bottom: 1px solid $grayprimary;
+        img {
+          width: 400px;
+          height: 450px;
+          padding: 0;
+          margin: 0;
+        }
+        h2 {
+          font-size: 1.5rem;
+          color: $whiteprimary;
+          text-transform: uppercase;
+          margin-top: 0.5rem;
+          padding-top: 1rem;
+          text-align: center;
+        }
+        p {
+          font-size: 1.2rem;
+          color: $whiteprimary;
+          text-align: center;
+          margin: 0.5rem 0;
         }
       }
     }
