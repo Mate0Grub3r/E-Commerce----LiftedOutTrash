@@ -195,6 +195,11 @@ body header .banner-box img {
   border: 1px solid #757575;
   margin-top: 4.5rem;
 }
+@media screen and (max-width: 1200px) {
+  body header .banner-box img {
+    height: 25vh;
+  }
+}
 body main {
   /* Remeras section */
   /* Baggys section */
@@ -237,10 +242,20 @@ body main .box-remeras, body main .box-zip-hoodies, body main .box-hoodies, body
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1200px) {
+  body main .box-remeras, body main .box-zip-hoodies, body main .box-hoodies, body main .box-baggys {
+    flex-direction: column;
+  }
+}
 body main .box-remeras .remera1-box, body main .box-zip-hoodies .remera1-box, body main .box-zip-hoodies .zip-hoodies-box, body main .box-hoodies .remera1-box, body main .box-hoodies .hoodies-box, body main .box-baggys .remera1-box, body main .box-baggys .baggy1-box {
   border: 1px solid #757575;
   border-top: none;
   border-bottom: none;
+}
+@media screen and (max-width: 1200px) {
+  body main .box-remeras .remera1-box, body main .box-zip-hoodies .remera1-box, body main .box-zip-hoodies .zip-hoodies-box, body main .box-hoodies .remera1-box, body main .box-hoodies .hoodies-box, body main .box-baggys .remera1-box, body main .box-baggys .baggy1-box {
+    border-bottom: 1px solid #757575;
+  }
 }
 body main .box-remeras .remera1-box img, body main .box-zip-hoodies .remera1-box img, body main .box-zip-hoodies .zip-hoodies-box img, body main .box-hoodies .remera1-box img, body main .box-hoodies .hoodies-box img, body main .box-baggys .remera1-box img, body main .box-baggys .baggy1-box img {
   width: 400px;
@@ -252,6 +267,20 @@ body main .box-remeras .remera1-box img, body main .box-zip-hoodies .remera1-box
 body main .box-remeras .remera1-box img:hover, body main .box-zip-hoodies .remera1-box img:hover, body main .box-zip-hoodies .zip-hoodies-box img:hover, body main .box-hoodies .remera1-box img:hover, body main .box-hoodies .hoodies-box img:hover, body main .box-baggys .remera1-box img:hover, body main .box-baggys .baggy1-box img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
+}
+@media screen and (max-width: 1200px) {
+  body main .box-remeras .remera1-box img:hover, body main .box-zip-hoodies .remera1-box img:hover, body main .box-zip-hoodies .zip-hoodies-box img:hover, body main .box-hoodies .remera1-box img:hover, body main .box-hoodies .hoodies-box img:hover, body main .box-baggys .remera1-box img:hover, body main .box-baggys .baggy1-box img:hover {
+    width: 100%;
+  }
+  body main .box-remeras .remera1-box img:hover:hover, body main .box-zip-hoodies .remera1-box img:hover:hover, body main .box-zip-hoodies .zip-hoodies-box img:hover:hover, body main .box-hoodies .remera1-box img:hover:hover, body main .box-hoodies .hoodies-box img:hover:hover, body main .box-baggys .remera1-box img:hover:hover, body main .box-baggys .baggy1-box img:hover:hover {
+    transform: none;
+    transition: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body main .box-remeras .remera1-box img, body main .box-zip-hoodies .remera1-box img, body main .box-zip-hoodies .zip-hoodies-box img, body main .box-hoodies .remera1-box img, body main .box-hoodies .hoodies-box img, body main .box-baggys .remera1-box img, body main .box-baggys .baggy1-box img {
+    width: 100%;
+  }
 }
 body main .box-remeras .remera1-box h2, body main .box-zip-hoodies .remera1-box h2, body main .box-zip-hoodies .zip-hoodies-box h2, body main .box-hoodies .remera1-box h2, body main .box-hoodies .hoodies-box h2, body main .box-baggys .remera1-box h2, body main .box-baggys .baggy1-box h2 {
   border-top: 1px solid #757575;
@@ -280,9 +309,14 @@ body main .baggys-texto-box p {
 }
 body main .box-baggys .baggy1-box img {
   width: 400px;
-  height: 500px;
+  height: auto;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  body main .box-baggys .baggy1-box img {
+    width: 100%;
+  }
 }
 body main .box-baggys .baggy1-box h2 {
   font-size: 1.5rem;
@@ -314,6 +348,11 @@ body main .box-hoodies .hoodies-box img {
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 1200px) {
+  body main .box-hoodies .hoodies-box img {
+    width: 100%;
+  }
+}
 body main .box-hoodies .hoodies-box h2 {
   font-size: 1.5rem;
   color: #d5d5d5;
@@ -343,6 +382,11 @@ body main .box-zip-hoodies {
   justify-content: left !important;
   gap: 1.5rem;
 }
+@media screen and (max-width: 1200px) {
+  body main .box-zip-hoodies {
+    gap: 0;
+  }
+}
 body main .box-zip-hoodies .zip-hoodies-box {
   border-bottom: 1px solid #757575;
 }
@@ -351,6 +395,11 @@ body main .box-zip-hoodies .zip-hoodies-box img {
   height: 450px;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  body main .box-zip-hoodies .zip-hoodies-box img {
+    width: 100%;
+  }
 }
 body main .box-zip-hoodies .zip-hoodies-box h2 {
   font-size: 1.5rem;

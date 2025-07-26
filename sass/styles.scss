@@ -215,9 +215,15 @@ body {
         height: 85vh;
         border: 1px solid $grayprimary;
         margin-top: 4.5rem;
+        
+      @media screen and (max-width: 1200px){
+      height: 25vh; 
+
+        }       
+       }     
       }
-    }
-  }
+     }
+     
 
   /* Main content */
   main {
@@ -262,10 +268,21 @@ body {
     .box-remeras {
       display: flex;
       justify-content: space-between;
+      
+      @media screen and (max-width: 1200px) {
+         flex-direction: column;          
+        }
+       
+      
+      
       .remera1-box {
         border: 1px solid $grayprimary;
         border-top: none;
         border-bottom: none;
+
+        @media screen and (max-width: 1200px) {          
+         border-bottom: 1px solid $grayprimary;
+        }
 
         img {
           width: 400px;
@@ -277,6 +294,17 @@ body {
           &:hover {
             transform: scale(1.05);
             transition: transform 0.3s ease-in-out;
+            @media screen and (max-width: 1200px) {
+            width: 100%;
+            &:hover {
+            transform: none;
+            transition: none;
+          }
+          }
+          }
+
+          @media screen and (max-width: 1200px) {
+            width: 100%;
           }
         }
         h2 {
@@ -316,10 +344,14 @@ body {
         @extend .remera1-box;
         img {
           width: 400px;
-          height: 500px;
+          height: auto;
           padding: 0;
           margin: 0;
+           @media screen and (max-width: 1200px) {
+            width: 100%;
+          }
         }
+       
         h2 {
           font-size: 1.5rem;
           color: $whiteprimary;
@@ -359,6 +391,9 @@ body {
           height: 450px;
           padding: 0;
           margin: 0;
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+          }
         }
         h2 {
           font-size: 1.5rem;
@@ -395,6 +430,9 @@ body {
       @extend .box-remeras;
       justify-content: left !important;
       gap: 1.5rem;
+      @media screen and (max-width: 1200px) {
+         gap: 0;         
+        }
       .zip-hoodies-box {
         @extend .remera1-box;
         border-bottom: 1px solid $grayprimary;
@@ -403,6 +441,9 @@ body {
           height: 450px;
           padding: 0;
           margin: 0;
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+          }
         }
         h2 {
           font-size: 1.5rem;
