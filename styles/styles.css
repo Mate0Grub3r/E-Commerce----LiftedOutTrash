@@ -460,6 +460,12 @@ body footer .footer-background {
   height: 40vh;
   background-color: #757575;
 }
+@media screen and (max-width: 768px) {
+  body footer .footer-background {
+    margin-top: 10vh;
+    height: 30vh;
+  }
+}
 body footer .footer-background .logo-footer {
   text-align: left;
   font-size: 2rem;
@@ -470,10 +476,21 @@ body footer .footer-background .logo-footer {
   margin-left: 1rem;
   margin-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  body footer .footer-background .logo-footer {
+    text-align: center;
+    margin: 0;
+  }
+}
 body footer .footer-background .derechos {
   text-align: left;
   font-size: 1rem;
   color: #d5d5d5;
+}
+@media screen and (max-width: 768px) {
+  body footer .footer-background .derechos {
+    text-align: center;
+  }
 }
 body footer .footer-background .box-nav-footer {
   display: flex;
@@ -481,6 +498,11 @@ body footer .footer-background .box-nav-footer {
   align-items: center;
   gap: 1rem;
   translate: -18vw -13vh;
+}
+@media screen and (max-width: 768px) {
+  body footer .footer-background .box-nav-footer {
+    translate: 0 5vh;
+  }
 }
 body footer .footer-background .box-nav-footer a {
   text-decoration: none;
@@ -497,6 +519,11 @@ body footer .footer-background .box-information {
   gap: 1rem;
   translate: 40vw -27vh;
   width: 20vw;
+}
+@media screen and (max-width: 768px) {
+  body footer .footer-background .box-information {
+    display: none;
+  }
 }
 body footer .footer-background .box-information a {
   text-decoration: none;

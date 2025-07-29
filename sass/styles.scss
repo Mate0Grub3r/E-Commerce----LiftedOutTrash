@@ -494,6 +494,10 @@ body {
       width: 100%;
       height: 40vh;
       background-color: $grayprimary;
+      @media screen and (max-width: 768px) {
+        margin-top: 10vh;
+        height: 30vh;
+      }
 
       .logo-footer {
         text-align: left;
@@ -504,12 +508,19 @@ body {
         margin-top: 20vh;
         margin-left: 1rem;
         margin-bottom: 0;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+          margin: 0;
+        }
       }
 
       .derechos {
         text-align: left;
         font-size: 1rem;
         color: $whiteprimary;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
 
       .box-nav-footer {
@@ -518,7 +529,9 @@ body {
         align-items: center;
         gap: 1rem;
         translate: -18vw -13vh;
-
+        @media screen and (max-width: 768px) {
+          translate: 0 5vh;
+        }
         a {
           text-decoration: none;
           color: $whiteprimary;
@@ -536,6 +549,9 @@ body {
         gap: 1rem;
         translate: 40vw -27vh;
         width: 20vw;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
 
         a {
           text-decoration: none;
