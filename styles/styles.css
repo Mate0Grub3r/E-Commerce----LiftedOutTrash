@@ -64,7 +64,7 @@ body nav .container-fluid .navbar-brand {
   text-transform: uppercase;
   transform: translateX(12vh);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   body nav .container-fluid .navbar-brand {
     transform: translateX(0) !important;
   }
@@ -181,7 +181,7 @@ body nav .container-fluid .searchbar-pc input {
   box-shadow: none;
   width: 200px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   body nav .container-fluid .searchbar-pc {
     display: none !important;
   }
@@ -195,7 +195,12 @@ body header .banner-box img {
   border: 1px solid #757575;
   margin-top: 4.5rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
+  body header .banner-box img {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 768px) {
   body header .banner-box img {
     height: 25vh;
   }
@@ -217,14 +222,14 @@ body main .welcome-box h1 {
   color: #d5d5d5;
   text-transform: uppercase;
 }
-body main .remeras-texto-box-html {
+body main .sections-texto-box-html {
   margin-top: 4rem;
   border: 1px solid #757575;
 }
-body main .remeras-texto-box-html .p-remeras-texto {
+body main .sections-texto-box-html .p-sections-texto {
   margin-top: 0rem;
 }
-body main .box-remeras-html {
+body main .box-sections-html {
   border-bottom: 1px solid #757575;
 }
 body main .remeras-texto-box, body main .zip-hoodies-texto-box, body main .hoodies-texto-box, body main .baggys-texto-box {
@@ -242,7 +247,7 @@ body main .box-remeras, body main .box-zip-hoodies, body main .box-hoodies, body
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   body main .box-remeras, body main .box-zip-hoodies, body main .box-hoodies, body main .box-baggys {
     flex-direction: column;
   }
@@ -252,7 +257,7 @@ body main .box-remeras .remera1-box, body main .box-zip-hoodies .remera1-box, bo
   border-top: none;
   border-bottom: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   body main .box-remeras .remera1-box, body main .box-zip-hoodies .remera1-box, body main .box-zip-hoodies .zip-hoodies-box, body main .box-hoodies .remera1-box, body main .box-hoodies .hoodies-box, body main .box-baggys .remera1-box, body main .box-baggys .baggy1-box {
     border-bottom: 1px solid #757575;
   }
@@ -264,11 +269,23 @@ body main .box-remeras .remera1-box img, body main .box-zip-hoodies .remera1-box
   margin: 0;
   cursor: pointer;
 }
+@media screen and (max-width: 1366px) {
+  body main .box-remeras .remera1-box img, body main .box-zip-hoodies .remera1-box img, body main .box-zip-hoodies .zip-hoodies-box img, body main .box-hoodies .remera1-box img, body main .box-hoodies .hoodies-box img, body main .box-baggys .remera1-box img, body main .box-baggys .baggy1-box img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main .box-remeras .remera1-box img, body main .box-zip-hoodies .remera1-box img, body main .box-zip-hoodies .zip-hoodies-box img, body main .box-hoodies .remera1-box img, body main .box-hoodies .hoodies-box img, body main .box-baggys .remera1-box img, body main .box-baggys .baggy1-box img {
+    width: 400px;
+    height: 400px;
+  }
+}
 body main .box-remeras .remera1-box img:hover, body main .box-zip-hoodies .remera1-box img:hover, body main .box-zip-hoodies .zip-hoodies-box img:hover, body main .box-hoodies .remera1-box img:hover, body main .box-hoodies .hoodies-box img:hover, body main .box-baggys .remera1-box img:hover, body main .box-baggys .baggy1-box img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   body main .box-remeras .remera1-box img:hover, body main .box-zip-hoodies .remera1-box img:hover, body main .box-zip-hoodies .zip-hoodies-box img:hover, body main .box-hoodies .remera1-box img:hover, body main .box-hoodies .hoodies-box img:hover, body main .box-baggys .remera1-box img:hover, body main .box-baggys .baggy1-box img:hover {
     width: 100%;
   }
@@ -277,7 +294,7 @@ body main .box-remeras .remera1-box img:hover, body main .box-zip-hoodies .remer
     transition: none;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   body main .box-remeras .remera1-box img, body main .box-zip-hoodies .remera1-box img, body main .box-zip-hoodies .zip-hoodies-box img, body main .box-hoodies .remera1-box img, body main .box-hoodies .hoodies-box img, body main .box-baggys .remera1-box img, body main .box-baggys .baggy1-box img {
     width: 100%;
   }
@@ -313,9 +330,16 @@ body main .box-baggys .baggy1-box img {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
+  body main .box-baggys .baggy1-box img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
   body main .box-baggys .baggy1-box img {
     width: 100%;
+    height: auto;
   }
 }
 body main .box-baggys .baggy1-box h2 {
@@ -348,9 +372,16 @@ body main .box-hoodies .hoodies-box img {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
+  body main .box-hoodies .hoodies-box img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
   body main .box-hoodies .hoodies-box img {
     width: 100%;
+    height: 450px;
   }
 }
 body main .box-hoodies .hoodies-box h2 {
@@ -382,7 +413,7 @@ body main .box-zip-hoodies {
   justify-content: left !important;
   gap: 1.5rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   body main .box-zip-hoodies {
     gap: 0;
   }
@@ -396,9 +427,16 @@ body main .box-zip-hoodies .zip-hoodies-box img {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
+  body main .box-zip-hoodies .zip-hoodies-box img {
+    width: 350px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
   body main .box-zip-hoodies .zip-hoodies-box img {
     width: 100%;
+    height: 450px;
   }
 }
 body main .box-zip-hoodies .zip-hoodies-box h2 {

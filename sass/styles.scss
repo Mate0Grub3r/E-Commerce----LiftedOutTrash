@@ -66,7 +66,7 @@ body {
         text-transform: uppercase;
         transform: translateX(12vh);
       }
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 768px) {
         .navbar-brand {
           transform: translateX(0) !important;
         }
@@ -198,7 +198,7 @@ body {
           width: 200px;
         }
       }
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 768px) {
         .searchbar-pc {
           display: none !important;
         }
@@ -215,15 +215,15 @@ body {
         height: 85vh;
         border: 1px solid $grayprimary;
         margin-top: 4.5rem;
-        
-      @media screen and (max-width: 1200px){
-      height: 25vh; 
-
-        }       
-       }     
+        @media screen and (max-width: 1366px) {
+          height: 70vh;
+        }
+        @media screen and (max-width: 768px) {
+          height: 25vh;
+        }
       }
-     }
-     
+    }
+  }
 
   /* Main content */
   main {
@@ -241,14 +241,14 @@ body {
 
     /* Remeras section */
 
-    .remeras-texto-box-html {
+    .sections-texto-box-html {
       margin-top: 4rem;
       border: 1px solid $grayprimary;
-      .p-remeras-texto {
+      .p-sections-texto {
         margin-top: 0rem;
       }
     }
-    .box-remeras-html {
+    .box-sections-html {
       border-bottom: 1px solid $grayprimary;
     }
 
@@ -268,20 +268,18 @@ body {
     .box-remeras {
       display: flex;
       justify-content: space-between;
-      
-      @media screen and (max-width: 1200px) {
-         flex-direction: column;          
-        }
-       
-      
-      
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
       .remera1-box {
         border: 1px solid $grayprimary;
         border-top: none;
         border-bottom: none;
 
-        @media screen and (max-width: 1200px) {          
-         border-bottom: 1px solid $grayprimary;
+        @media screen and (max-width: 768px) {
+          border-bottom: 1px solid $grayprimary;
         }
 
         img {
@@ -290,20 +288,28 @@ body {
           padding: 0;
           margin: 0;
           cursor: pointer;
+          @media screen and (max-width: 1366px) {
+            width: 300px;
+            height: 300px;
+          }
+          @media screen and (max-width: 768px) {
+            width: 400px;
+            height: 400px;
+          }
 
           &:hover {
             transform: scale(1.05);
             transition: transform 0.3s ease-in-out;
-            @media screen and (max-width: 1200px) {
-            width: 100%;
-            &:hover {
-            transform: none;
-            transition: none;
-          }
-          }
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              &:hover {
+                transform: none;
+                transition: none;
+              }
+            }
           }
 
-          @media screen and (max-width: 1200px) {
+          @media screen and (max-width: 768px) {
             width: 100%;
           }
         }
@@ -347,11 +353,17 @@ body {
           height: auto;
           padding: 0;
           margin: 0;
-           @media screen and (max-width: 1200px) {
+
+          @media screen and (max-width: 1366px) {
+            width: 300px;
+            height: auto;
+          }
+          @media screen and (max-width: 768px) {
             width: 100%;
+            height: auto;
           }
         }
-       
+
         h2 {
           font-size: 1.5rem;
           color: $whiteprimary;
@@ -391,8 +403,14 @@ body {
           height: 450px;
           padding: 0;
           margin: 0;
-          @media screen and (max-width: 1200px) {
+
+          @media screen and (max-width: 1366px) {
+            width: 300px;
+            height: 300px;
+          }
+          @media screen and (max-width: 768px) {
             width: 100%;
+            height: 450px;
           }
         }
         h2 {
@@ -430,9 +448,9 @@ body {
       @extend .box-remeras;
       justify-content: left !important;
       gap: 1.5rem;
-      @media screen and (max-width: 1200px) {
-         gap: 0;         
-        }
+      @media screen and (max-width: 768px) {
+        gap: 0;
+      }
       .zip-hoodies-box {
         @extend .remera1-box;
         border-bottom: 1px solid $grayprimary;
@@ -441,8 +459,14 @@ body {
           height: 450px;
           padding: 0;
           margin: 0;
-          @media screen and (max-width: 1200px) {
+
+          @media screen and (max-width: 1366px) {
+            width: 350px;
+            height: 400px;
+          }
+          @media screen and (max-width: 768px) {
             width: 100%;
+            height: 450px;
           }
         }
         h2 {
